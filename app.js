@@ -2,15 +2,15 @@
 
 /* var a = +prompt('Введите свой возраст');
 
-if(a > 0 || a == 18) {
+if(a > 0 && a <= 18) {
     alert('Вы молоды еще, нужно учиться');
-}else if(a > 18 || a == 50 ) {
+}else if(a > 18 && a <= 50 ) {
     alert('Вам скоро на пенсию');
-}else if(a > 50 || a ==59 ) {
+}else if(a > 50 && a <= 59 ) {
     alert('Вы пенсионер');
-}else if(a > 59 || a == 100) {
+}else if(a > 59 && a <= 100) {
     alert('Что-то пошло не так');
-} */
+}   */
 
 
 /* Pag-2 */
@@ -96,13 +96,19 @@ switch (clock) {
 var b = +prompt('Введите второе число')
 var c = +prompt('Введите третье число')
 
-if(a < b || a < c) {
-    alert('Среднее число:' + a)
-}else if(b < a || b < c) {
-    alert('Среднее число:' + b)
-}else if(c < a || c < b) {
+if(b > a && a > c) {
+    alert('Среднее число:' + a);
+}else if(c > a && a > b) {
+    alert('Среднее число:' + a);
+}else if(a > b && b > c) {
+    alert('Среднее число:' + b);
+}else if(c > b && b > a) {
+    alert('Среднее число:' + b);
+}else if(a > c && c > b) {
+    alert('Среднее число:' + c)
+}else if(b > c && c > a) {
     alert('Среднее число:' + c)
 }else {
-    alert('Ошибка...')
-} */
+    alert('Ошибка...');
+}  */
 
